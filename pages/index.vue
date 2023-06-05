@@ -24,7 +24,7 @@ useHead({
           class="m-auto my-2 h-1 w-20 rounded border-0 bg-gray-200 dark:bg-gray-700"
         />
         <p class="flex justify-center text-center text-lg sm:text-xl">
-          Fullstack Engineer @&nbsp;
+          Lead Software Engineer @&nbsp;
           <a
             class="text-blue-600 hover:text-blue-800 hover:underline"
             href="https://www.onomaai.com"
@@ -38,22 +38,23 @@ useHead({
       <h1 class="font-sans text-4xl font-bold">About me</h1>
       <p class="font-serif text-lg">
         I am a computer engineer currently working on fullstack applications
-        built with the Next.js framework. I am specially interested in the the
+        built with the Next.js framework. I am especially interested in the the
         latest advances made with React Server Components and how they can be
         used to build better web applications both from a user experience and a
         performance point of view.
       </p>
       <p class="font-serif text-lg">
-        However, during the last 5 years I worked with most of the major web
-        frameworks including Angular, Vue and React. As a matter of fact, this
-        website is built with Nuxt.js, the Vue.js framework for fullstack
-        applications &#x1F609;.
+        During the last 5 years I worked with most of the major web frameworks
+        including Angular, Vue and React. As a matter of fact, this website is
+        built with Nuxt.js, the Vue.js framework for fullstack applications
+        &#x1F609;.
       </p>
       <p class="font-serif text-lg">
         I am always looking to get involved in new projects and learn new
-        things. If you want to get in touch with me, you can schedule a call me
-        at <a href="https://cal.com/carlos-sanchez-marin-4a4jrn"> Cal.com</a>,
-        or send me an <a href="mailto:carlos@sanchez.kr">email</a>.
+        things. If you want to get in touch with me, you can schedule a call
+        with
+        <a href="https://cal.com/carlos-sanchez-marin-4a4jrn"> Cal.com</a>, or
+        send me an <a href="mailto:carlos@sanchez.kr">email</a>.
       </p>
     </section>
     <section id="background" class="flex flex-col gap-4">

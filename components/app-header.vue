@@ -15,7 +15,9 @@
             'flex items-center gap-3 rounded-xl px-3 py-3 text-lg/none font-medium transition-colors',
           ]"
           :aria-current="activeLink === nav.href ? 'page' : undefined"
-          >{{ nav.name }}</NuxtLink
+        >
+          <component :is="nav.icon" class="h-6 w-6" />
+          {{ nav.name }}</NuxtLink
         >
       </div>
     </nav>
@@ -23,10 +25,11 @@
 </template>
 
 <script setup lang="ts">
+import { HomeIcon, DocumentTextIcon } from '@heroicons/vue/24/outline';
 const route = useRoute();
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'Home', href: '/', icon: HomeIcon },
+  { name: 'Blog', href: '/blog', icon: DocumentTextIcon },
 ];
 
 const activeLink = computed(() => {

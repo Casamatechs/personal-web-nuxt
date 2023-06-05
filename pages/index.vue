@@ -54,7 +54,7 @@
       </p>
     </section>
     <section id="footer">
-      <Footer />
+      <AppFooter />
     </section>
   </main>
 </template>

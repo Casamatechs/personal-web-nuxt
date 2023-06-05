@@ -1,5 +1,20 @@
+<script setup lang="ts">
+useHead({
+  title: 'Carlos Sanchez',
+  meta: [
+    {
+      name: 'Carlos Sanchez personal website',
+      content:
+        'Personal website of Carlos Sanchez, a software engineer based in Seoul, South Korea.',
+    },
+  ],
+});
+</script>
+
 <template>
-  <main class="flex min-h-screen flex-col gap-8 p-12 sm:p-24">
+  <main
+    class="flex min-h-screen flex-col gap-8 px-10 py-12 lg:mx-auto lg:max-w-4xl"
+  >
     <section id="header" class="flex w-full flex-col items-center">
       <div>
         <h1 class="text-center text-3xl font-bold sm:text-5xl">

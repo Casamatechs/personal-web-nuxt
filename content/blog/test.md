@@ -1,7 +1,7 @@
 ---
 title: Test blog post
 author: Carlos Sanchez
-date: 2023-06-04
+date: '2023-06-04'
 ---
 
 # Hello content

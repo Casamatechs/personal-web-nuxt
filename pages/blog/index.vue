@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { format } from 'date-fns';
+import { BlogPostMetadata } from '~/types/blog';
 const { data: navigation } = await useAsyncData('blog', () =>
-  queryContent().find()
+  queryContent<BlogPostMetadata>().sort({ date: -1 }).find()
 );
 </script>
 
@@ -10,10 +12,11 @@ const { data: navigation } = await useAsyncData('blog', () =>
       <NuxtLink
         v-for="post in navigation"
         :key="post.title"
-        class="h-40 w-full bg-slate-400 hover:cursor-pointer hover:underline"
+        class="h-40 w-full bg-slate-400 text-black hover:text-black hover:no-underline"
         :to="post._path"
       >
         <h2>{{ post.title }}</h2>
+        <p>{{ format(new Date(post.date), 'MMMM dd, yyyy') }}</p>
       </NuxtLink>
     </div>
   </div>

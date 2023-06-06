@@ -3,8 +3,10 @@ export default defineNuxtConfig({
   content: {
     highlight: true,
   },
-  css: ['~/assets/css/main.css'],
-  modules: ['@nuxt/content'],
+  eslint: {
+    lintOnStart: false,
+  },
+  modules: ['@nuxt/content', '@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
   postcss: {
     plugins: {
       tailwindcss: {},

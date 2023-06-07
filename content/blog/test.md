@@ -2,6 +2,7 @@
 title: Test blog post
 author: Carlos Sanchez
 date: '2023-06-04'
+description: This is a test blog post with a long description, as we can see thanks to the lore ipsum. Lore ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 ---
 
 # Hello content

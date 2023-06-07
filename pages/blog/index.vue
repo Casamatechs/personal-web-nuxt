@@ -17,9 +17,9 @@ const { data: navigation } = await useAsyncData('blog', () =>
         :to="post._path"
       >
         <h2 class="text-3xl">{{ post.title }}</h2>
-        <p class="multiline-ellipsis text-sm">{{ post.description }}</p>
-        <div class="mt-auto flex">
-          <CalendarIcon class="h-6 w-6" />
+        <p class="text-sm">{{ post.description }}</p>
+        <div class="multiline-ellipsis mt-auto flex gap-1">
+          <CalendarIcon class="my-auto aspect-square h-5" />
           <p>{{ format(new Date(post.date), 'MMMM dd, yyyy') }}</p>
         </div>
       </NuxtLink>
@@ -35,5 +35,6 @@ const { data: navigation } = await useAsyncData('blog', () =>
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   white-space: pre-wrap;
+  word-break: keep-all;
 }
 </style>

@@ -1,6 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  css: ['~/assets/css/main.css'],
+  content: {
+    highlight: true,
+  },
+  eslint: {
+    lintOnStart: false,
+  },
+  modules: ['@nuxt/content', '@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  plugins: [
+    {
+      src: '~/plugins/vercel.ts',
+      mode: 'client',
+    },
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},

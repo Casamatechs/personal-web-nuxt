@@ -7,6 +7,12 @@ export default defineNuxtConfig({
     lintOnStart: false,
   },
   modules: ['@nuxt/content', '@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  plugins: [
+    {
+      src: '~/plugins/vercel.ts',
+      mode: 'client',
+    },
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},

@@ -13,12 +13,12 @@ const { data: navigation } = await useAsyncData('blog', () =>
       <NuxtLink
         v-for="post in navigation"
         :key="post.title"
-        class="flex h-44 w-full flex-col gap-2 rounded-lg bg-gray-50 p-4 text-black hover:bg-slate-200 hover:text-black hover:no-underline"
+        class="flex h-fit min-h-[12rem] w-full flex-col gap-2 rounded-lg bg-gray-50 p-4 text-black hover:bg-slate-200 hover:text-black hover:no-underline"
         :to="post._path"
       >
         <h2 class="text-3xl">{{ post.title }}</h2>
-        <p class="text-sm">{{ post.description }}</p>
-        <div class="multiline-ellipsis mt-auto flex gap-1">
+        <p class="multiline-ellipsis text-sm">{{ post.description }}</p>
+        <div class="mt-auto flex gap-1">
           <CalendarIcon class="my-auto aspect-square h-5" />
           <p>{{ format(new Date(post.date), 'MMMM dd, yyyy') }}</p>
         </div>

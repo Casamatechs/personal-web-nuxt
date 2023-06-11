@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     lintOnStart: false,
   },
   modules: ['@nuxt/content', '@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  ssr: true,
   plugins: [
     {
       src: '~/plugins/vercel.ts',

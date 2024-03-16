@@ -5,7 +5,7 @@ useHead({
     {
       name: 'Carlos Sanchez personal website',
       content:
-        'Personal website of Carlos Sanchez, a software engineer based in Seoul, South Korea.',
+        'Personal website of Carlos Sanchez, a software engineer based in Gyeonggi-do, South Korea.',
     },
   ],
 });
@@ -24,12 +24,12 @@ useHead({
           class="m-auto my-2 h-1 w-20 rounded border-0 bg-gray-200 dark:bg-gray-700"
         />
         <p class="flex justify-center text-center text-lg sm:text-xl">
-          Lead Software Engineer @&nbsp;
+          Junior Backend Engineer @&nbsp;
           <a
             class="text-blue-600 hover:text-blue-800 hover:underline"
-            href="https://www.onomaai.com"
+            href="https://www.remote.com"
           >
-            Onoma.ai
+            Remote.com
           </a>
         </p>
       </div>
@@ -37,24 +37,23 @@ useHead({
     <section id="about-me" class="flex flex-col gap-4 break-keep">
       <h1 class="font-sans text-4xl font-bold">About me</h1>
       <p class="font-serif text-lg">
-        I am a computer engineer currently working on fullstack applications
-        built with the Next.js framework. I am especially interested in the the
-        latest advances made with React Server Components and how they can be
-        used to build better web applications both from a user experience and a
-        performance point of view.
+        I am a computer engineer currently working on Remote's engineering team
+        as a Backend Engineer, using Elixir. Previously, I worked as a fullstack
+        engineer and team lead at Onoma AI, a startup based in Seoul. Right now
+        my main focus is on expanding my knowledge on Elixir ecosystem,
+        specially its main libraries (Phoenix, Ecto, Oban...) and best
+        practices.
       </p>
       <p class="font-serif text-lg">
-        During the last 5 years I worked with most of the major web frameworks
-        including Angular, Vue and React. As a matter of fact, this website is
-        built with Nuxt.js, the Vue.js framework for fullstack applications
-        &#x1F609;.
+        During the last 5 years I worked mostly with Java and the JVM on the
+        high-performance distributed area, as well as the major web frameworks
+        including Angular, Vue and React - always using Typescript. As a matter
+        of fact, this website is built with Nuxt.js, the Vue.js framework for
+        fullstack applications &#x1F609;.
       </p>
       <p class="font-serif text-lg">
-        I am always looking to get involved in new projects and learn new
-        things. If you want to get in touch with me, you can schedule a call
-        with
-        <a href="https://cal.com/carlos-sanchez-marin-4a4jrn"> Cal.com</a>, or
-        send me an <a href="mailto:carlos@sanchez.kr">email</a>.
+        If you want to get in touch with me, you can send me an
+        <a href="mailto:carlos@sanchez.kr">email</a>.
       </p>
     </section>
     <section id="background" class="flex flex-col gap-4">

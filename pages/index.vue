@@ -24,7 +24,7 @@ useHead({
           class="m-auto my-2 h-1 w-20 rounded border-0 bg-gray-200 dark:bg-gray-700"
         />
         <p class="flex justify-center text-center text-lg sm:text-xl">
-          Junior Backend Engineer @&nbsp;
+          Backend Engineer @&nbsp;
           <a
             class="text-blue-600 hover:text-blue-800 hover:underline"
             href="https://www.remote.com"
@@ -39,17 +39,18 @@ useHead({
       <p class="font-serif text-lg">
         I am a computer engineer currently working on Remote's engineering team
         as a Backend Engineer, using Elixir. Previously, I worked as a fullstack
-        engineer and team lead at Onoma AI, a startup based in Seoul. Right now
-        my main focus is on expanding my knowledge on Elixir ecosystem,
-        specially its main libraries (Phoenix, Ecto, Oban...) and best
-        practices.
+        engineering team lead at Onoma AI, a startup based in Seoul.
       </p>
       <p class="font-serif text-lg">
-        During the last 5 years I worked mostly with Java and the JVM on the
-        high-performance distributed area, as well as the major web frameworks
-        including Angular, Vue and React - always using Typescript. As a matter
-        of fact, this website is built with Nuxt.js, the Vue.js framework for
-        fullstack applications &#x1F609;.
+        Since I started my professional career, I've been working with distributed
+        systems. Initially, I focused on high-performance distributed applications
+        using Java and the JVM ecosystem. Now, I continue working in this space
+        using Elixir, a language specifically designed for building distributed
+        and fault-tolerant applications.
+      </p>
+      <p class="font-serif text-lg">
+        At <a href="https://www.remote.com" target="_blank">Remote.com</a>, I'm helping build the leading platform that enables companies
+        to seamlessly hire, manage, and pay their global workforce.
       </p>
       <p class="font-serif text-lg">
         If you want to get in touch with me, you can send me an

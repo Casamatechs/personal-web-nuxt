@@ -13,7 +13,7 @@ useHead({
 
 <template>
   <main
-    class="flex min-h-screen flex-col gap-8 px-10 py-12 lg:mx-auto lg:max-w-4xl"
+    class="flex min-h-screen flex-col gap-8 bg-slate-100 px-10 py-12 text-black dark:bg-gray-800 dark:text-white lg:mx-auto lg:max-w-4xl"
   >
     <section id="header" class="flex w-full flex-col items-center">
       <div>
@@ -42,15 +42,16 @@ useHead({
         engineering team lead at Onoma AI, a startup based in Seoul.
       </p>
       <p class="font-serif text-lg">
-        Since I started my professional career, I've been working with distributed
-        systems. Initially, I focused on high-performance distributed applications
-        using Java and the JVM ecosystem. Now, I continue working in this space
-        using Elixir, a language specifically designed for building distributed
-        and fault-tolerant applications.
+        Since I started my professional career, I've been working with
+        distributed systems. Initially, I focused on high-performance
+        distributed applications using Java and the JVM ecosystem. Now, I
+        continue working in this space using Elixir, a language specifically
+        designed for building distributed and fault-tolerant applications.
       </p>
       <p class="font-serif text-lg">
-        At <a href="https://www.remote.com" target="_blank">Remote.com</a>, I'm helping build the leading platform that enables companies
-        to seamlessly hire, manage, and pay their global workforce.
+        At <a href="https://www.remote.com" target="_blank">Remote.com</a>, I'm
+        helping build the leading platform that enables companies to seamlessly
+        hire, manage, and pay their global workforce.
       </p>
       <p class="font-serif text-lg">
         If you want to get in touch with me, you can send me an

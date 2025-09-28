@@ -1,29 +1,19 @@
 <template>
   <footer class="flex flex-row justify-center gap-x-5">
     <NuxtLink class="h-8 w-8 flex-initial" href="mailto:carlos@sanchez.kr">
-      <img alt="Email me!" width="32" height="32" src="/email.svg" />
+      <Icon name="uil:envelope" class="h-8 w-8 bg-black dark:bg-white" />
     </NuxtLink>
     <NuxtLink
       class="h-8 w-8 flex-initial"
       href="https://github.com/Casamatechs"
     >
-      <img
-        alt="Check out my Github!"
-        width="32"
-        height="32"
-        src="/github-mark.svg"
-      />
+      <Icon name="uil:github" class="h-8 w-8 bg-black dark:bg-white" />
     </NuxtLink>
     <NuxtLink
       class="h-8 w-8 flex-initial"
       href="https://www.linkedin.com/in/csanchezmarin/"
     >
-      <img
-        alt="Check out my LinkedIn!"
-        width="32"
-        height="32"
-        src="/linkedin.svg"
-      />
+      <Icon name="uil:linkedin" class="h-8 w-8 bg-black dark:bg-white" />
     </NuxtLink>
   </footer>
 </template>

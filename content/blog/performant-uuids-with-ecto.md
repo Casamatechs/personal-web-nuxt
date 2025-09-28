@@ -20,7 +20,7 @@ One of the most common solutions to this problem is to replace the usage of auto
 
 UUIDv4 is a pseudo-random sequence of bits, which means that it is not possible to predict in any way a value of a UUIDv4. At first glance, this seems like a good solution, it greatly mitigates the risk of broken access control and also grants in practice the uniqueness of the primary key across multiple shards.
 
-However, there is a critical drawback with the usage of UUIDv4 as primary keys: they can't be optimally indexed by the database. This post won't get into the technical details of how indexes work, but long story short, UUIDv4 completely random and *non-sequential* nature affects the database; specially when it comes to writing data.
+However, there is a critical drawback with the usage of UUIDv4 as primary keys: they can't be optimally indexed by the database. This post won't get into the technical details of how indexes work, but long story short, UUIDv4 completely random and _non-sequential_ nature affects the database; specially when it comes to writing data.
 This post from PlanetScale explains the tradeoffs of using UUIDs (including UUIDv4 and UUIDv7) as primary keys: [The Problem with Using a UUID Primary Key in MySQL](https://planetscale.com/blog/the-problem-with-using-a-uuid-primary-key-in-mysql#best-ways-to-use-a-uuid-primary-key-with-mysql). Even though there are solutions like Snowflake ID, UILD or NanoID, relational databases like MySQL orPostgreSQL have a built-in binary types for UUIDs, which will help us saving space.
 
 ## UUIDv7 - a better solution
@@ -99,7 +99,8 @@ The reason to write this whole post is that I found myself forgetting quite ofte
 
 ### The Elixir AST
 
-From the [official documentation](https://hexdocs.pm/elixir/syntax-reference.html): 
+From the [official documentation](https://hexdocs.pm/elixir/syntax-reference.html):
+
 > Elixir syntax was designed to have a straightforward conversion to an abstract syntax tree (AST)
 
 Elixir metaprogramming makes use of this syntax design to represent our code as an AST, making it easy to manipulate and transform our code programmatically. This post won't get into the details of how Elixir metaprogramming works, but if you want to learn more, the official documentation is a good starting point. Also, can't recommend enough the book [Metaprogramming Elixir](https://pragprog.com/titles/cmelixir/metaprogramming-elixir/) by Chris McCord (the creator of Phoenix).
@@ -137,7 +138,7 @@ defmodule MyApp.Schema do
       case block do
         {:__block__, _, expressions} ->
           # This captured version is equivalent to:
-          # Enum.any?(expressions, 
+          # Enum.any?(expressions,
           #   fn expression -> match?({:timestamps, _, _}, expression)
           # end)
           Enum.any?(expressions, &match?({:timestamps, _, _}, &1))

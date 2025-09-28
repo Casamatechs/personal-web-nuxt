@@ -1,12 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  colorMode: {
+    classSuffix: '',
+  },
   content: {
-    highlight: true,
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'github-dark',
+          langs: ['ts', 'elixir'],
+        },
+      },
+    },
   },
   eslint: {
     lintOnStart: false,
   },
-  modules: ['@nuxt/content', '@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    '@nuxt/icon',
+  ],
   ssr: true,
   plugins: [
     {
